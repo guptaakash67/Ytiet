@@ -1,0 +1,73 @@
+/* Mobile First Design */
+
+/* Fade Container */
+.fadeContainer {
+  background-color: rgba(0, 0, 0, 1); /* Black background */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  position: fixed; /* Stay in the viewport */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-out effect */
+  z-index: 1000;
+  padding: 1rem; /* Add padding for mobile */
+  text-align: center; /* Center-align text */
+}
+
+.fadeOut {
+  opacity: 0; /* Fade out effect */
+}
+
+/* Button Shine Effect */
+.btnshine {
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0%, #fff 10%, #868686 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  white-space: normal; /* Allow wrapping of text */
+  font-size: 1.2rem; /* Default smaller font for mobile */
+  line-height: 1.5; /* Add spacing for readability */
+  margin-bottom: 1rem; /* Margin below the heading */
+}
+
+/* Keyframes for the shine effect */
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+/* Tablet and Above */
+@media (min-width: 640px) {
+  .btnshine {
+    font-size: 1.8rem; /* Slightly larger font on tablets */
+  }
+}
+
+/* Medium Devices (like tablets) */
+@media (min-width: 768px) {
+  .btnshine {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large Devices (like laptops) */
+@media (min-width: 1024px) {
+  .btnshine {
+    font-size: 3rem; /* Bigger font size for larger screens */
+  }
+
+  .fadeContainer {
+    height: 100vh; /* Full height for larger screens */
+    padding: 0; /* Remove padding */
+  }
+}
