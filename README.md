@@ -1,4 +1,4 @@
-1. Clone the repository:   git clone https://github.com/Soumojitshome2023/college-website-nextjs
+1. Clone the repository:   https://github.com/guptaakash67/Ytiet.git
 
  2. Install the dependencies:
   npm install
