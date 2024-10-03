@@ -14,9 +14,7 @@
 
 
   * Server :
-
-
- MONGO_URI=
+   MONGO_URI=
    FRONTEND_URI=http://localhost:3000
    REFRESH_TOKEN_KEY=
    ACCESS_TOKEN_KEY=
